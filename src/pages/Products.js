@@ -10,7 +10,7 @@ function Products() {
   const [productInfo, setProductInfo] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://3.94.101.227/allProducts").then((response) => {
+    Axios.get("http://localhost:3001/products").then((response) => {
       setProductInfo(response.data);
     });
   }, []);

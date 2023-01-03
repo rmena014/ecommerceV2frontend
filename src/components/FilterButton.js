@@ -10,8 +10,8 @@ const PriceFilterButton = () => {
 
   const getProducts = (category) => {
     const url = category
-      ? `http://3.94.101.227/filtered${category}`
-      : "http://3.94.101.227/allProducts";
+      ? `http://localhost:3001/filtered${category}`
+      : "http://localhost:3001/allProducts";
     axios
       .get(url, {})
       .then((response) => {
