@@ -11,7 +11,7 @@ function App() {
     <Router>
       <SideNavBar />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route exact path="/" element={<Home />}></Route>
         <Route path="/products" element={<Products />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
       </Routes>

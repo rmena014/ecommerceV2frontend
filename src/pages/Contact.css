@@ -1,5 +1,4 @@
 .container {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +77,10 @@
   min-height: 150px;
 }
 .submitBttn {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110%;
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
   background-color: rgb(255, 255, 255);
@@ -103,7 +105,7 @@
   .container,
   .field,
   textarea {
-    width: 100%;
+    width: 80%;
     height: auto;
     display: flex;
     display: inline;
@@ -119,6 +121,16 @@
     color: rgb(0, 0, 0);
   }
   .submitBttn {
+    margin-left: 5px;
+    width: 97%;
     background-color: aliceblue;
+  }
+
+  .right {
+    padding: 10px 0 10px;
+  }
+
+  .right h2::after {
+    display: none;
   }
 }

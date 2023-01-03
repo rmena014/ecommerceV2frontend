@@ -9,11 +9,11 @@ import PriceFilterButton from "../components/FilterButton";
 function Products() {
   const [productInfo, setProductInfo] = useState([]);
 
-  // useEffect(() => {
-  //   Axios.get("http://localhost:3001/").then((response) => {
-  //     setProductInfo(response.data);
-  //   });
-  // }, []);
+  useEffect(() => {
+    Axios.get("http://localhost:3001/products").then((response) => {
+      setProductInfo(response.data);
+    });
+  }, []);
 
   return (
     <div>

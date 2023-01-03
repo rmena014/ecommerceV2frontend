@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/images/armadaLogoTransparent copy.webp";
 import alternateLogo from "../assets/images/armadaWWVintageTransparent.webp";
 import RegNav from "../components/RegNav";
+import ImageSlider from "../components/ImageSlider";
 
 function Home() {
   return (
@@ -15,6 +16,13 @@ function Home() {
       </div>
 
       <RegNav />
+      <ImageSlider
+        images={[
+          "/images/courdroySliderImage.webp",
+          "/images/knitwearSliderImage.webp",
+          "/images/footwearSliderImage.webp",
+        ]}
+      />
 
       <section className="brand_info">
         <div className="brand_vintage_img">

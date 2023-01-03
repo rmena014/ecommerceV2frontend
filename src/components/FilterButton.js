@@ -48,7 +48,7 @@ const PriceFilterButton = () => {
       {products.map((products) => (
         <div key={products.id}>
           <div className="product_card">
-            <img src={products.image} />
+            <img src={products.image} alt="Product" />
             <div className="productInfo">
               <h1>{products.productName}</h1>
               <h3>${products.price}</h3>
